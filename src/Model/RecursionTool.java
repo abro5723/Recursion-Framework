@@ -14,13 +14,13 @@ public class RecursionTool
 		}
 		else
 		{
-			return getFibNumber(position - 1) + getFibNumber(position - 2);
+			return getFibNumber(Math.abs(position - 1) )+ getFibNumber(Math.abs(position - 2));
 		}
 	}
 	
 	public double getFactorialNumber(double position)
 	{
-		if(position <1111111111111111111111111111111.0)
+		if(position < 0)
 		{
 			return Integer.MIN_VALUE;
 		}
